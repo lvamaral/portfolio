@@ -2105,6 +2105,8 @@
 			display: block;
 		}
 
+
+
 		.image.fit {
 			display: block;
 		}
@@ -2121,7 +2123,7 @@
 
 			.image.feature img {
 				display: block;
-				width: 100%;
+
 			}
 
 		.image.icon {
@@ -2158,6 +2160,16 @@
 
 			.image.icon:hover:after {
 				opacity: 1;
+			}
+
+			.port-img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.port-img-app {
+				height: 100%;
+				max-width: 100px;
 			}
 
 	span.image.icon {
@@ -2422,6 +2434,14 @@
 		}
 
 		.feature .image {
+			display: inline-block;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			width: 50%;
+		}
+
+		.feature .image2 {
 			display: inline-block;
 			height: 100%;
 			overflow: hidden;
@@ -2809,6 +2829,17 @@
 				height: 18em;
 			}
 
+			#special-feature {
+				height: 28em;
+				padding-left: 90px;
+				width: 90%;
+			}
+
+
+			#special-feature img {
+				float: right;
+			}
+
 				.feature .content {
 					padding: 2.5em;
 				}
@@ -2817,9 +2848,10 @@
 
 			#header {
 				background-attachment: scroll,							scroll,							scroll;
-				background-image: url("images/top-1600.svg"), url("images/overlay.png"), url("../../images/header.jpg");
+				background-image: url("images/top-1600.svg"), url("images/overlay.png"), url("../../images/header.jpg") ;
 				background-size: 1600px 230px,					auto,							cover;
 				padding: 6em 0 12em 0;
+
 			}
 
 				#header:before {
@@ -3135,4 +3167,24 @@
 
 	.last-icons {
 		font-size: 40px;
+	}
+
+	.rounded {
+		padding: 0 94px;
+		/*background-image: url("../../images/pic02.jpg");*/
+		background: #ff7e5f;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to top, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to top, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+	}
+
+	.playlist-img {
+		padding: 40px 0;
+		background: #E8CBC0;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 	}
