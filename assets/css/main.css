@@ -2197,6 +2197,22 @@
 			display: none;
 		}
 
+		.port-icon-r, .port-icon-l {
+			font-size: 40px;
+			color: grey;
+		}
+
+		.port-icon-l {
+			float: left;
+		}
+		.port-icon-r {
+			float: center;
+		}
+
+		.port-icon-r:hover, .port-icon-l:hover {
+			color: black;
+		}
+
 /* List */
 
 	ol.default {
@@ -3111,7 +3127,7 @@
 		/* Feature */
 
 			.feature {
-				margin-bottom: 1em;
+				margin-bottom: 1.5em;
 			}
 
 				.feature .content {
