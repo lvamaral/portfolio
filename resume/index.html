@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Amaral Resume</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link href="https://use.fontawesome.com/f58ff23766.css" media="all" rel="stylesheet">
+  </head>
+  <body>
+    <section id="contact">
+      <h1>Lucas Amaral</h1>
+      <h3 id="job-title"><i>Software Developer/Engineer</i></h3>
+      <div class="links">
+        <a href="mailto:lucas.v.amaral@gmail.com" id="email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="http://www.github.com/lvamaral" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com/in/lucasvamaral" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="http://www.lucasvamaral.com/?utm_source=resume" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i></a>
+      </div>
+      <!-- <p>680 Mission St.</p>
+      <p>San Francisco, 94105</p>
+      <p>(919) 599 3881</p> -->
+    </section>
+    <hr>
+    <section id="education-skills">
+      <div class="half-1">
+        <h2># Education</h2>
+        <div class="edu-section">
+          <div><h3>Duke University:</h3><p><i>Durham, 2016</i></p></div>
+          <p>Bachelor of Science (BS) in Economics & Finance</p>
+        </div>
+        <div class="edu-section">
+          <div><h3>App Academy:</h3><p><i>San Francisco, 2017</i></p></div>
+          <p>Rigorous 1000+ hour full-stack bootcamp that accepts < 3% of all applicants</p>
+        </div>
+        <div class="edu-section">
+          <div><h3>General Assembly:</h3><p><i>San Francisco, 2016</i></p></div>
+          <p>100+ hour program focused on front-end design and UI fundamentals</p>
+        </div>
+      </div>
+      <div class="half-2">
+          <h2># Skills</h2>
+          <div class="skills-all">
+            <div class="skills-row">
+              <div class="skills-main">
+                <p>Javascript</p>
+              </div>
+              <div class="skills-other">
+                <p>React + Redux</p>
+                <p>React Native</p>
+                <p>Node</p>
+                <p>Express</p>
+                <p>Socket.io</p>
+              </div>
+            </div>
+            <div class="skills-row">
+              <div class="skills-main">
+                <p>Ruby</p>
+                <p>Python</p>
+
+              </div>
+              <div class="skills-other">
+                <p>Ruby on Rails</p>
+                <p>Flask</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="skills-rest">
+            <p><b>+ </b></p>
+            <div class="">
+              <p>PostgreSQL</p>
+              <p>Firebase (NoSQL)</p>
+            </div>
+            <div class="">
+              <p>Heroku</p>
+              <p>AWS</p>
+              <p>Git</p>
+            </div>
+            <div class="">
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <hr>
+    <section id="work-experience">
+      <h2># Work Experience</h2>
+      <h3>Associate at Expanding Capital, Venture Capital Firm</h3>
+      <p><i>San Francisco, May 2016 – Mar 2017</i></p>
+      <ul>
+        <li>Created a Python web-crawler to aggregate information on startup funding rounds, and used Excel and statistical methodology to find quantitative indicators of startup investment attractiveness based on previous funding activity</li>
+        <li>Prospected and wrote research briefs for potential investments, ultimately producing a list of 60+ “wish-list” companies the firm’s partners pursued, resulting in two $1MM investments</li>
+        <li>Designed the official company website using HTML and CSS </li>
+      </ul>
+    </section>
+    <hr>
+    <section id="projects">
+      <h2># Projects</h2>
+      <div class="project">
+        <div class="project-title">
+          <h3>BetterPlaylists</h3>
+          <p><a href="http://www.betterplaylists.com" target="_blank"><i>Live</i></a><a href="http://www.github.com/lvamaral/betterplaylists" target=
+            "_blank"><i>Github</i></a></p>
+        </div>
+
+        <!-- <h3>BetterPlaylists <i><a href="#">Live</a> | <a href="#">Github</a></i></h3> -->
+        <p>Full stack music-sharing website built with Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.</p>
+        <ul>
+          <li>Secured user account creation and authentication for login and signup based on BCrypt encryption</li>
+          <li>Developed Rails database model associations to give users the ability to create, share, and follow/unfollow playlists, using React to render real-time client side updates</li>
+          <li>Implemented custom-built React playbar component integrated with AWS-hosted music files for continuous, site-wide music playback</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          <h3>Playtime App</h3>
+          <p><a href="http://www.playtimeapp.io" target="_blank"><i>Live</i></a><a href="http://www.github.com/lvamaral/playtime" target=
+            "_blank"><i>Github</i></a></p>
+        </div>
+
+        <p>Mobile app that facilitates coordination of dog play dates, and finding nearby dog parks. Built with React Native, a Firebase (NoSQL) database, and a Ruby on Rails server for push notifications.</p>
+        <ul>
+          <li>Implemented Facebook and Gmail login and signup authentication</li>
+          <li>Used Google Maps API and geolocation to locate and display nearby parks</li>
+          <li>Developed system for push notifications to alert users when they receive follow requests and other updates using a Rails server</li>
+          <li>Integrated AWS image-hosting to allow user-uploaded profile pictures of their dogs</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-title">
+          <h3>King of the Hill</h3>
+          <p><a href="https://koth.herokuapp.com/" target="_blank"><i>Live</i></a><a href="https://github.com/amaralbros/OnlineArena" target=
+            "_blank"><i>Github</i></a></p>
+        </div>
+
+        <p>Online, synchronous multiplayer battle game. Built purely with Javascript, using Phaser.js for HTML Canvas rendering on the frontend, a Node server with Express.js, and Sockets.io for client-server communications.</p>
+        <ul>
+          <li>Developed real-time multiplayer from scratch by creating a bi-directional data flow between clients, sockets, and the server</li>
+          <li>Handled player input through JS browser events, and game rendering using Phaser.js for map and character animations</li>
+          <li>Kept game synchronized by referencing and updating a server’s authoritative game state on player login/logout, movement, rotation, and attack through socket events</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!-- Lucas Amaral
+680 Mission St Apt 16S
+San Francisco, CA 94105
+Email - Github - LinkedIn - Portfolio

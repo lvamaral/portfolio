@@ -1,0 +1,45 @@
+@font-face {
+font-family: AleoRegular;
+src: url(Aleo-Regular.otf);
+}
+@font-face {
+font-family: AleoBold;
+src: url(Aleo-Bold.otf);
+}
+@font-face {
+font-family: AleoItalic;
+src: url(Aleo-Italic.otf);
+}
+@font-face {
+font-family: AleoBoldItalic;
+src: url(Aleo-BoldItalic.otf);
+}
+@font-face {
+font-family: AleoLight;
+src: url(Aleo-Light.otf);
+}
+@font-face {
+font-family: AleoLightItalic;
+src: url(Aleo-LightItalic.otf);
+}
+
+:root {
+  --main-color: orange;
+}
+
+* {
+font-family: AleoRegular, Helvetica, Arial, sans-serif;
+}
+
+strong {
+font-family: AleoBold, Helvetica, Arial, sans-serif;
+color: var(--main-color);
+}
+
+em, cite, blockquote {
+font-family: AleoItalic, Helvetica, Arial, sans-serif;
+}
+
+strong em {
+font-family: AleoBoldItalic, Helvetica, Arial, sans-serif;
+}
