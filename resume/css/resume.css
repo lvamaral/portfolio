@@ -107,6 +107,7 @@ i {
 #education-skills {
   display: flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 }
 
 .edu-section {
