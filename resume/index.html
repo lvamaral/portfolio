@@ -11,16 +11,13 @@
   <body>
     <section id="contact">
       <h1>Lucas Amaral</h1>
-      <h3 id="job-title"><i>Software Developer/Engineer</i></h3>
+      <h3 id="job-title">Full-Stack Software Engineer</h3>
       <div class="links">
         <a href="mailto:lucas.v.amaral@gmail.com" id="email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
         <a href="http://www.github.com/lvamaral" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
         <a href="http://www.linkedin.com/in/lucasvamaral" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         <a href="http://www.lucasvamaral.com/?utm_source=resume" target="_blank"><i class="fa fa-desktop" aria-hidden="true"></i></a>
       </div>
-      <!-- <p>680 Mission St.</p>
-      <p>San Francisco, 94105</p>
-      <p>(919) 599 3881</p> -->
     </section>
     <hr>
     <section id="education-skills">
@@ -34,10 +31,6 @@
           <div><h3>App Academy:</h3><p><i>San Francisco, 2017</i></p></div>
           <p>Rigorous 1000+ hour full-stack bootcamp that accepts < 3% of all applicants</p>
         </div>
-        <div class="edu-section">
-          <div><h3>General Assembly:</h3><p><i>San Francisco, 2016</i></p></div>
-          <p>100+ hour program focused on front-end design and UI fundamentals</p>
-        </div>
       </div>
       <div class="half-2">
           <h2># Skills</h2>
@@ -47,40 +40,20 @@
                 <p>Javascript</p>
               </div>
               <div class="skills-other">
+                <p>Node.js</p>
                 <p>React + Redux</p>
+                <p>AngularJS</p>
                 <p>React Native</p>
-                <p>Node</p>
-                <p>Express</p>
-                <p>Socket.io</p>
               </div>
-            </div>
-            <div class="skills-row">
               <div class="skills-main">
-                <p>Ruby</p>
-                <p>Python</p>
-
+                <p>+</p>
               </div>
               <div class="skills-other">
-                <p>Ruby on Rails</p>
-                <p>Flask</p>
+                <p>PostgreSQL</p>
+                <p>Redis</p>
+                <p>AWS (SQS, S3, Redshift, Step Functions, Lambda)</p>
+                <p>Docker</p>
               </div>
-            </div>
-
-          </div>
-          <div class="skills-rest">
-            <p><b>+ </b></p>
-            <div class="">
-              <p>PostgreSQL</p>
-              <p>Firebase (NoSQL)</p>
-            </div>
-            <div class="">
-              <p>Heroku</p>
-              <p>AWS</p>
-              <p>Git</p>
-            </div>
-            <div class="">
-              <p>HTML</p>
-              <p>CSS</p>
             </div>
           </div>
       </div>
@@ -88,12 +61,29 @@
     <hr>
     <section id="work-experience">
       <h2># Work Experience</h2>
+      <h3>Full-Stack Engineer at Lob</h3>
+      <p><i>San Francisco, January 2018-Present</i></p>
+      <ul>
+        <li>Lead a group of engineers and worked cross-functionally with other internal teams to implement Custom Envelopes, a new major product offering. Technical work included a
+        client-facing AngularJS dashboard page, an internal React + Redux dashboard, and a backend inventory tracking system
+        built on Node, Redis, and PostregreSQL. In less than 5 months, the feature has seen close to 20MM envelope orders and
+        resulted in over $400K in revenue for the company</li>
+        <li>Led the project to implement the basis of the company’s revenue tracking system by generating daily SQL views
+        aggregating millions of rows of usage data from AWS Redshift into a simpler format non technical team members leverage
+        to build financial dashboards</li>
+        <li>Helped design and implement the company’s data deletion system, built using serverless AWS Lambdas and Step Functions
+        triggered periodically to efficiently redact large amounts of data from multiple sources</li>
+        <li>Designed a custom client-side algorithm to extract a written signature from a picture that was a finalist in the
+        company’s yearly Hackathon competition for innovative ideas; proactively productized the concept into a feature now used in the company’s
+        Custom Checks product</li>
+      </ul>
+      <br>
       <h3>Associate at Expanding Capital, Venture Capital Firm</h3>
       <p><i>San Francisco, May 2016 – Mar 2017</i></p>
       <ul>
-        <li>Created a Python web-crawler to aggregate information on startup funding rounds, and used Excel and statistical methodology to find quantitative indicators of startup investment attractiveness based on previous funding activity</li>
+        <li>Created a Python web-crawler to aggregate information on startup funding rounds, and used statistical methodology to find quantitative indicators of startup investment attractiveness based on previous funding activity</li>
         <li>Prospected and wrote research briefs for potential investments, ultimately producing a list of 60+ “wish-list” companies the firm’s partners pursued, resulting in two $1MM investments</li>
-        <li>Designed the official company website using HTML and CSS </li>
+        <li>Designed and launched the official company website using HTML and CSS </li>
       </ul>
     </section>
     <hr>
@@ -101,15 +91,16 @@
       <h2># Projects</h2>
       <div class="project">
         <div class="project-title">
-          <h3>BetterPlaylists</h3>
-          <p><a href="http://www.betterplaylists.com" target="_blank"><i>Live</i></a><a href="http://www.github.com/lvamaral/betterplaylists" target=
+          <h3>King of the Hill</h3>
+          <p><a href="https://koth.herokuapp.com/" target="_blank"><i>Live</i></a><a href="https://github.com/amaralbros/OnlineArena" target=
             "_blank"><i>Github</i></a></p>
         </div>
-        <p>Full stack music-sharing website built with Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.</p>
+
+        <p>Online, synchronous multiplayer battle game. Built purely with Javascript, using Phaser.js for HTML Canvas rendering on the frontend, a Node server with Express.js, and Sockets.io for client-server communications.</p>
         <ul>
-          <li>Secured user account creation and authentication for login and signup based on BCrypt encryption</li>
-          <li>Developed Rails database model associations to give users the ability to create, share, and follow/unfollow playlists, using React to render real-time client side updates</li>
-          <li>Implemented custom-built React playbar component integrated with AWS-hosted music files for continuous, site-wide music playback</li>
+          <li>Developed real-time multiplayer from scratch by creating a bi-directional data flow between clients, sockets, and the server</li>
+          <li>Handled player input through JS browser events, and game rendering using Phaser.js for map and character animations</li>
+          <li>Kept game synchronized by referencing and updating a server’s authoritative game state on player login/logout, movement, rotation, and attack through socket events</li>
         </ul>
       </div>
 
@@ -126,20 +117,6 @@
           <li>Used Google Maps API and geolocation to locate and display nearby parks</li>
           <li>Developed system for push notifications to alert users when they receive follow requests and other updates using a Rails server</li>
           <li>Integrated AWS image-hosting to allow user-uploaded profile pictures of their dogs</li>
-        </ul>
-      </div>
-
-      <div class="project">
-        <div class="project-title">
-          <h3>King of the Hill</h3>
-          <p><a href="https://koth.herokuapp.com/" target="_blank"><i>Live</i></a><a href="https://github.com/amaralbros/OnlineArena" target=
-            "_blank"><i>Github</i></a></p>
-        </div>
-        <p>Online, synchronous multiplayer battle game. Built purely with Javascript, using Phaser.js for HTML Canvas rendering on the frontend, a Node server with Express.js, and Sockets.io for client-server communications.</p>
-        <ul>
-          <li>Developed real-time multiplayer from scratch by creating a bi-directional data flow between clients, sockets, and the server</li>
-          <li>Handled player input through JS browser events, and game rendering using Phaser.js for map and character animations</li>
-          <li>Kept game synchronized by referencing and updating a server’s authoritative game state on player login/logout, movement, rotation, and attack through socket events</li>
         </ul>
       </div>
     </section>
