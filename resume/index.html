@@ -20,62 +20,27 @@
       </div>
     </section>
     <hr>
-    <section id="education-skills">
-      <div class="half-1">
-        <h2># Education</h2>
-        <div class="edu-section">
-          <div><h3>Duke University:</h3><p><i>Durham, 2016</i></p></div>
-          <p>Bachelor of Science (BS) in Economics & Finance</p>
-        </div>
-        <div class="edu-section">
-          <div><h3>App Academy:</h3><p><i>San Francisco, 2017</i></p></div>
-          <p>Rigorous 1000+ hour full-stack bootcamp that accepts < 3% of all applicants</p>
-        </div>
-      </div>
-      <div class="half-2">
-          <h2># Skills</h2>
-          <div class="skills-all">
-            <div class="skills-row">
-              <div class="skills-main">
-                <p>Javascript</p>
-              </div>
-              <div class="skills-other">
-                <p>Node.js</p>
-                <p>React + Redux</p>
-                <p>AngularJS</p>
-                <p>React Native</p>
-              </div>
-              <div class="skills-main">
-                <p>+</p>
-              </div>
-              <div class="skills-other">
-                <p>PostgreSQL</p>
-                <p>Redis</p>
-                <p>AWS (SQS, S3, Redshift, Step Functions, Lambda)</p>
-                <p>Docker</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </section>
-    <hr>
+    <!-- <hr> -->
     <section id="work-experience">
       <h2># Work Experience</h2>
-      <h3>Full-Stack Engineer at Lob</h3>
+      <h3>Platform Engineer at Lob</h3>
       <p><i>San Francisco, January 2018-Present</i></p>
       <ul>
-        <li>Lead a group of engineers and worked cross-functionally with other internal teams to implement Custom Envelopes, a new major product offering. Technical work included a
-        client-facing AngularJS dashboard page, an internal React + Redux dashboard, and a backend inventory tracking system
-        built on Node, Redis, and PostregreSQL. In less than 5 months, the feature has seen close to 20MM envelope orders and
-        resulted in over $400K in revenue for the company</li>
+        <li>Led a group of four engineers and worked cross-functionally with other internal teams to implement a major new product
+        offering that allows customers to programmatically send branded envelopes with their mail.
+        In less than 5 months, the feature has seen close to 20 million envelope orders and resulted in over $400K in revenue
+        for the company. Technical work included a client-facing AngularJS dashboard page, an internal React + Redux dashboard,
+        and a backend inventory tracking system built on Node, Redis, and PostregreSQL</li>
         <li>Led the project to implement the basis of the company’s revenue tracking system by generating daily SQL views
-        aggregating millions of rows of usage data from AWS Redshift into a simpler format non technical team members leverage
-        to build financial dashboards</li>
-        <li>Helped design and implement the company’s data deletion system, built using serverless AWS Lambdas and Step Functions
-        triggered periodically to efficiently redact large amounts of data from multiple sources</li>
-        <li>Designed a custom client-side algorithm to extract a written signature from a picture that was a finalist in the
-        company’s yearly Hackathon competition for innovative ideas; proactively productized the concept into a feature now used in the company’s
-        Custom Checks product</li>
+        aggregating and standardizing millions of rows of usage data from AWS Redshift into a simpler format non technical team
+        members use to build financial dashboards. This decreased the time it takes to generate the company’s usage revenue from
+        a month to a single day</li>
+        <li>Designed and implemented the company’s data deletion system, which ensures the company is GDPR compliant by allowing
+        customers to request a deletion of their data on certain schedules. It was built using serverless AWS Lambdas and Step
+        Functions triggered periodically to efficiently redact hundreds of thousands of rows of data from multiple sources</li>
+        <li>Developed a custom client-side method to extract a written signature from a picture that was a finalist in the company’s
+        yearly Hackathon competition for innovative ideas; proactively productized the concept into a feature that has been used
+        hundreds of times in the company’s Custom Checks product</li>
       </ul>
       <br>
       <h3>Associate at Expanding Capital, Venture Capital Firm</h3>
@@ -86,7 +51,7 @@
         <li>Designed and launched the official company website using HTML and CSS </li>
       </ul>
     </section>
-    <hr>
+    <!-- <hr> -->
     <section id="projects">
       <h2># Projects</h2>
       <div class="project">
@@ -95,7 +60,6 @@
           <p><a href="https://koth.herokuapp.com/" target="_blank"><i>Live</i></a><a href="https://github.com/amaralbros/OnlineArena" target=
             "_blank"><i>Github</i></a></p>
         </div>
-
         <p>Online, synchronous multiplayer battle game. Built purely with Javascript, using Phaser.js for HTML Canvas rendering on the frontend, a Node server with Express.js, and Sockets.io for client-server communications.</p>
         <ul>
           <li>Developed real-time multiplayer from scratch by creating a bi-directional data flow between clients, sockets, and the server</li>
@@ -103,14 +67,12 @@
           <li>Kept game synchronized by referencing and updating a server’s authoritative game state on player login/logout, movement, rotation, and attack through socket events</li>
         </ul>
       </div>
-
       <div class="project">
         <div class="project-title">
           <h3>Playtime App</h3>
-          <p><a href="http://www.playtimeapp.io" target="_blank"><i>Live</i></a><a href="http://www.github.com/lvamaral/playtime" target=
+          <p><a href="http://www.github.com/lvamaral/playtime" target=
             "_blank"><i>Github</i></a></p>
         </div>
-
         <p>Mobile app that facilitates coordination of dog play dates, and finding nearby dog parks. Built with React Native, a Firebase (NoSQL) database, and a Ruby on Rails server for push notifications.</p>
         <ul>
           <li>Implemented Facebook and Gmail login and signup authentication</li>
@@ -119,6 +81,48 @@
           <li>Integrated AWS image-hosting to allow user-uploaded profile pictures of their dogs</li>
         </ul>
       </div>
+    </section>
+    <section id="education-skills">
+      <div class="half-1">
+        <h2># Education</h2>
+        <div class="edu-section">
+          <div>
+            <h3>Duke University:</h3>
+            <p><i>Durham, 2016</i></p>
+          </div>
+          <p>Bachelor of Science (BS) in Economics & Finance</p>
+        </div>
+        <div class="edu-section">
+          <div>
+            <h3>App Academy:</h3>
+            <p><i>San Francisco, 2017</i></p>
+          </div>
+          <p>Rigorous 1000+ hour full-stack bootcamp that accepts < 3% of all applicants</p> </div> </div> <div
+              class="half-2">
+              <h2># Skills</h2>
+              <div class="skills-all">
+                <div class="skills-row">
+                  <div class="skills-main">
+                    <p>Javascript</p>
+                  </div>
+                  <div class="skills-other">
+                    <p>Node.js</p>
+                    <p>React + Redux</p>
+                    <p>AngularJS</p>
+                    <p>React Native</p>
+                  </div>
+                  <div class="skills-main">
+                    <p>+</p>
+                  </div>
+                  <div class="skills-other">
+                    <p>PostgreSQL</p>
+                    <p>Redis</p>
+                    <p>AWS (SQS, S3, Redshift, Step Functions, Lambda)</p>
+                    <p>Docker</p>
+                  </div>
+                </div>
+              </div>
+        </div>
     </section>
   </body>
 </html>
